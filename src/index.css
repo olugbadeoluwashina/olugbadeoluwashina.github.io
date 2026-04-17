@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Cormorant Garamond", serif;
+}
+
+@layer base {
+  body {
+    @apply text-emerald-50 antialiased font-sans font-medium;
+    background: radial-gradient(circle at 50% -20%, #064e3b 0%, #022c22 40%, #010a08 100%);
+    min-height: 100vh;
+  }
+}
+
+.technical-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(16, 185, 129, 0.05) 1px, transparent 0);
+  background-size: 60px 60px;
+  min-height: 100vh;
+}
+
+.serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
